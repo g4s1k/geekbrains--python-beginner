@@ -4,6 +4,8 @@ def find_max_digit(number: int) -> int:
         digit = number % 10
         number = number // 10
         result = digit if digit > result else result
+        if result == 9:
+            break
     return result
 
 
